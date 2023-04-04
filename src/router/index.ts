@@ -1,4 +1,9 @@
-import { createRouter, createWebHistory, Router, RouteRecordRaw } from 'vue-router';
+import {
+  createRouter,
+  createWebHistory,
+  Router,
+  RouteRecordRaw,
+} from 'vue-router';
 
 import Home from '@/views/Home.vue';
 import NotFound from '@/views/404.vue';
@@ -10,7 +15,10 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Home',
     meta: { title: 'Home' },
   },
-  { component: NotFound, path: '/error/404' },
+  {
+    component: NotFound,
+    path: '/error/404',
+  },
   {
     path: '/:catchAll(.*)',
     redirect: '/error/404',

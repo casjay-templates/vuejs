@@ -19,6 +19,8 @@ module.exports = {
   },
   rules: {
     eqeqeq: 'off',
+    'no-multiple-empty-lines': 'off',
+    'eslint-disable-next-line': 'off',
     'import/no-unresolved': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     'no-unused-vars': 'warn',

@@ -1,0 +1,7 @@
+{
+  "name": "name",
+  "tagLine": "tagname",
+  "email": ["email1@example.com","email2@exampl.com"],
+  "contents": "page contents",
+  "bio": ["line 1", "line 2", "line 3", "\r"]
+}

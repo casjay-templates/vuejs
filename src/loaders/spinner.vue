@@ -1,9 +1,6 @@
 <template>
-  <div v-if="msgSpinner !== null || msgSpinner !== ''">
+  <div v-if="msg == null || msg == 'false'">
     <h2>{{ msgSpinner }}</h2>
-  </div>
-  <div v-else>
-    <h2>Loading data from the API</h2>
   </div>
   <svg
     viewBox="0 0 38 38"
@@ -37,7 +34,7 @@ export default defineComponent({
   name: 'show-spinner',
   props: {
     msg: { type: String, default: 'false' },
-    msgSpinner: { type: String, default: 'false' },
+    msgSpinner: { type: String, default: '' },
     loading: { type: Boolean },
     color: {
       type: String,
@@ -45,11 +42,11 @@ export default defineComponent({
     },
     height: {
       type: Number,
-      default: 64,
+      default: 96,
     },
     width: {
       type: Number,
-      default: 64,
+      default: 96,
     },
   },
 });
