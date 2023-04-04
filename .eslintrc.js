@@ -10,13 +10,11 @@ module.exports = {
   },
   extends: [
     '@vue/airbnb',
-    'airbnb-base',
-+   'airbnb-typescript/base',
     'plugin:vue/vue3-essential',
     '@vue/typescript/recommended',
   ],
   parserOptions: {
-    //ecmaVersion: 2020,
+    ecmaVersion: 12,
     project: './tsconfig.json',
   },
   rules: {
@@ -35,19 +33,32 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'object-curly-newline': ['warn', { ObjectPattern: { multiline: true } }],
-    "import/extensions": [
-      "error",
-      "ignorePackages",
+    'import/extensions': [
+      'error',
+      'ignorePackages',
       {
-        "": "never",
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-   ]
+        '': 'never',
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
   settings: {
+    'import/extensions': ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      alias: {
+        map: [['~', './src/']],
+        extensions: ['.ts', '.js', '.tsx'],
+      },
+    },
+    node: {
+      extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    },
     ...createAliasSetting({
       '@': `${path.resolve(__dirname, './src')}`,
     }),
