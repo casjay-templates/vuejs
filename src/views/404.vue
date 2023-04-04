@@ -3,7 +3,7 @@
   <div class="container">
     <div class="jumbotron">
       <h1>
-        <i class="fa fa-frown-o red"></i>
+        <i class="fa fa-frown-o red" />
         <a href="https://www.google.com/search?q=server+error+404" target="_blank">404 Not Found</a>
       </h1>
       <br />
@@ -19,8 +19,10 @@
           /><br />
         </div>
       </div>
-      <a href="/" class="btn btn-secondary btn-outline-danger btn-lg btn-block"
-        >return to homepage
+      <a
+        href="/"
+        class="btn btn-secondary btn-outline-danger btn-lg btn-block"
+      >return to homepage
       </a>
     </div>
   </div>

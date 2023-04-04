@@ -5,7 +5,7 @@
       type="button"
       style="width: 100px; color: #ffffff"
       class="m-2 text-left justify-content-between btn btn-outline-danger"
-      ><img src="logo.png" height="64" width="64" alt="Home" />
+    ><img src="logo.png" height="64" width="64" alt="Home" />
     </router-link>
   </div>
   <router-view />
@@ -25,16 +25,20 @@
       and powered by <a href="https://casjaysdev.com" target="_blank">CasjaysDev.com</a>
       <br />
       <br />
-      <a href="https://www.patreon.com/casjay" target="_blank"
-        ><img
-          src="https://img.shields.io/badge/patreon-donate-orange.svg"
-          border="0"
-          alt="Casjays Patreon Page"
+      <a
+        href="https://www.patreon.com/casjay"
+        target="_blank"
+      ><img
+        src="https://img.shields.io/badge/patreon-donate-orange.svg"
+        border="0"
+        alt="Casjays Patreon Page"
       /></a>
-      <a href="https://www.paypal.me/casjaysdev" target="_blank"
-        ><img
-          src="https://img.shields.io/badge/Donate-PayPal-green.svg?casjay@yahoo.com"
-          alt="Casjays Paypal Page"
+      <a
+        href="https://www.paypal.me/casjaysdev"
+        target="_blank"
+      ><img
+        src="https://img.shields.io/badge/Donate-PayPal-green.svg?casjay@yahoo.com"
+        alt="Casjays Paypal Page"
       /></a>
       <br />
       <br />
