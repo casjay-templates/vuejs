@@ -18,7 +18,6 @@ module.exports = {
   },
   rules: {
     eqeqeq: 'off',
-    allowImportingTsExtensions: 'true',
     'import/no-unresolved': 'off',
     'no-unused-vars': 'warn',
     'func-names': 'off',
