@@ -1,3 +1,8 @@
+require("@rushstack/eslint-patch/modern-module-resolution")
+
+const path = require('node:path')
+const createAliasSetting = require('@vue/eslint-config-airbnb/createAliasSetting')
+
 module.exports = {
   root: true,
   env: {
@@ -23,4 +28,9 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'object-curly-newline': ['warn', { ObjectPattern: { multiline: true } }],
   },
+  settings: {
+    ...createAliasSetting({
+      '@': `${path.resolve(__dirname, './src')}`
+    })
+  }
 };
