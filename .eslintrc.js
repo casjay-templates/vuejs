@@ -20,6 +20,7 @@ module.exports = {
   rules: {
     eqeqeq: 'off',
     'import/no-unresolved': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     'no-unused-vars': 'warn',
     'func-names': 'off',
     'no-process-exit': 'off',

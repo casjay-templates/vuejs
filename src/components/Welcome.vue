@@ -40,8 +40,6 @@ import Spinner from '@/loaders/spinner.vue';
   props: {
     msg: String,
     msgSpinner: { type: String },
-    setProfile: [],
-    isLoading: true,
   },
   components: { Spinner },
   computed: {},
@@ -66,8 +64,8 @@ import Spinner from '@/loaders/spinner.vue';
   },
 })
 export default class Welcome extends Vue {
-  setProfile!: Array;
-
   isLoading!: boolean;
+
+  setProfile: any;
 }
 </script>
