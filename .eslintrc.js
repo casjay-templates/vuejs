@@ -1,22 +1,26 @@
-require("@rushstack/eslint-patch/modern-module-resolution")
+require('@rushstack/eslint-patch/modern-module-resolution');
 
-const path = require('node:path')
-const createAliasSetting = require('@vue/eslint-config-airbnb/createAliasSetting')
+const path = require('node:path');
+const createAliasSetting = require('@vue/eslint-config-airbnb/createAliasSetting');
 
 module.exports = {
   root: true,
   env: {
     node: true,
   },
-  extends: ['plugin:vue/vue3-essential', '@vue/airbnb', '@vue/typescript/recommended'],
+  extends: [
+    '@vue/airbnb',
+    'plugin:vue/vue3-essential',
+    '@vue/typescript/recommended',
+  ],
   parserOptions: {
     ecmaVersion: 2020,
   },
   rules: {
     eqeqeq: 'off',
+    allowImportingTsExtensions: 'true',
     'import/no-unresolved': 'off',
     'no-unused-vars': 'warn',
-    'no-console': 'off',
     'func-names': 'off',
     'no-process-exit': 'off',
     'object-shorthand': 'off',
@@ -24,13 +28,15 @@ module.exports = {
     'consistent-return': 'off',
     'no-underscore-dangle': 'off',
     'no-shadow': 'off',
+    'vue/html-indent': 'off',
+    'vue/max-attributes-per-line': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'object-curly-newline': ['warn', { ObjectPattern: { multiline: true } }],
   },
   settings: {
     ...createAliasSetting({
-      '@': `${path.resolve(__dirname, './src')}`
-    })
-  }
+      '@': `${path.resolve(__dirname, './src')}`,
+    }),
+  },
 };

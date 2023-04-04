@@ -34,10 +34,10 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'spinner',
+  name: 'show-spinner',
   props: {
-    msg: { type: String },
-    msgSpinner: { type: String },
+    msg: { type: String, default: 'false' },
+    msgSpinner: { type: String, default: 'false' },
     loading: { type: Boolean },
     color: {
       type: String,

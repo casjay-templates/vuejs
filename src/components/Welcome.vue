@@ -64,5 +64,9 @@ import Spinner from '@/loaders/spinner.vue';
     this.isLoading = false;
   },
 })
-export default class Welcome extends Vue {}
+export default class Welcome extends Vue {
+  setProfile!: string;
+
+  isLoading = true;
+}
 </script>

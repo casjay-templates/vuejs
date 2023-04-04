@@ -4,11 +4,17 @@
     <div class="jumbotron">
       <h1>
         <i class="fa fa-frown-o red" />
-        <a href="https://www.google.com/search?q=server+error+404" target="_blank">404 Not Found</a>
+        <a
+          href="https://www.google.com/search?q=server+error+404"
+          target="_blank"
+          rel="noopener noreferrer"
+          >404 Not Found</a
+        >
       </h1>
       <br />
       <p class="lead">
-        We apologize but we can't seem to be able to find what you're looking for!<br />
+        We apologize but we can't seem to be able to find what you're looking
+        for!<br />
       </p>
 
       <div class="container">
@@ -19,10 +25,8 @@
           /><br />
         </div>
       </div>
-      <a
-        href="/"
-        class="btn btn-secondary btn-outline-danger btn-lg btn-block"
-      >return to homepage
+      <a href="/" class="btn btn-secondary btn-outline-danger btn-lg btn-block"
+        >return to homepage
       </a>
     </div>
   </div>
