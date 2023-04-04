@@ -1,6 +1,6 @@
 <template>
   <div v-if="setProfile == '' || isLoading == true">
-    <spinner />
+    <show-spinner />
   </div>
   <div v-else>
     <div class="row text-center">
@@ -50,7 +50,7 @@ import Spinner from '@/loaders/spinner.vue';
   },
   data() {
     return {
-      isLoading: true,
+      isLoading: false,
     };
   },
   mounted() {
