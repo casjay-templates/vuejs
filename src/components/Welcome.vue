@@ -3,32 +3,54 @@
     <spinner />
   </div>
   <div v-else>
-    <div class="row text-center">
-      <div class="col-md-6 offset-md-3">
-        <div class="text-center">
-          <h1>{{ setProfile.name }}</h1>
-          <p class="fs-4">{{ setProfile.tagLine }}</p>
+    <div class="text-center align-items-center mt-3">
+      <div class="text-center p-3">
+        <div class="header">
+          <div class="section">
+            <div class="row text-center">
+              <div class="col-md-3">
+                <a href="/"><img style="white-space: pre-line width: 100px; height: 100px" class="img" alt="ICON" v-bind:src="`${setProfile.icon}`" /></a>
+              </div>
+              <div class="col-md-6">
+                <h1 class="fs-1">{{ setProfile.name }}</h1>
+                <div class="fs-4">{{ setProfile.tagLine }}</div>
+              </div>
+              <div class="col-md-3">
+                <div class="fs-4 mb-2" v-for="side_right in setProfile.side_right" v-bind:key="side_right.link">
+                  <a :href="`${side_right.link}`">{{ side_right.text }}</a>
+                </div>
+              </div>
+              <div class="pr-1">
+                <span
+                  style="padding-right: .5rem';padding-right: .5rem"
+                  class="text-center align-items-center fs-4 nav-text"
+                  v-for="nav in setProfile.nav"
+                  v-bind:key="nav.link"
+                >
+                  <a class="btn btn-github icon mr-1" style="padding-left: 1rem; padding-right: 1rem; color: aqua" :href="`${nav.link}`">{{ nav.text }}</a>
+                </span>
+              </div>
+            </div>
+            <hr />
+          </div>
           <br />
         </div>
-        <span class="fs-2">
-          <span v-for="content in setProfile.contents" v-bind:key="content">
-            {{ content }}
+        <div class="container text-center align-items-center" style="width: 90%">
+          <span class="fs-4">
+            <span style="white-space: pre-line" v-for="content in setProfile.contents" v-bind:key="content">
+              {{ content }}
+            </span>
           </span>
           <br />
           <br />
-        </span>
-        <h1>Bio</h1>
-        <div class="fs-3" v-for="bio in setProfile.bio" v-bind:key="bio">
-          {{ bio }}
+          <div>
+            <hr class="text-center" style="" />
+            <h2>Admin Info</h2>
+            <span style="padding-right: 1rem" class="fs-4" v-for="info in setProfile.info" v-bind:key="info.text">
+              <a :href="`${info.link}`">{{ info.text }}</a>
+            </span>
+          </div>
         </div>
-        <br />
-        <br />
-        <h2>Email</h2>
-        <span class="fs-4" v-for="email in setProfile.email" v-bind:key="email">
-          <a :href="`mailto:${email}`">{{ email }}</a>
-          <br />
-        </span>
-        <br />
       </div>
     </div>
   </div>

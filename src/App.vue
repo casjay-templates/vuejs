@@ -1,11 +1,5 @@
 <template true>
-  <div id="nav" class="nav d-flex justify-content-center mx-5" v-if="layout === defaut">
-    <router-link to="/" type="button" style="width: 100px; color: #ffffff" class="m-2 text-left justify-content-between btn btn-outline-danger"
-      ><img src="logo.png" height="64" width="64" alt="Home" />
-    </router-link>
-  </div>
   <router-view />
-  <br /><br /><br />
   <hr />
   <div class="footer col-sm-12">
     <!-- Begin Footer -->
