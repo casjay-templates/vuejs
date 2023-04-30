@@ -39,7 +39,7 @@ import { Options, Vue } from 'vue-class-component';
 import axios from 'axios';
 import Spinner from '@/loaders/spinner.vue';
 
-const api = process.env.API_URL || './api/profile.json';
+const api = process.env.API_URL || '/api/profile.json';
 
 @Options({
   props: {
@@ -71,7 +71,8 @@ const api = process.env.API_URL || './api/profile.json';
         } else {
           throw new Error('An error has occured');
         }
-      }).catch((Error) => Error);
+      })
+      .catch((Error) => Error);
     this.isLoading = false;
   },
 })

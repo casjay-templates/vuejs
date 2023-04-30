@@ -1,33 +1,19 @@
 <template>
-  <!-- Error Page Content -->
   <div class="container">
     <div class="jumbotron">
-      <h1>
-        <i class="fa fa-frown-o red" />
-        <a
-          href="https://www.google.com/search?q=server+error+404"
-          target="_blank"
-          rel="noopener noreferrer"
-          >404 Not Found</a
-        >
-      </h1>
-      <br />
-      <p class="lead">
-        We apologize but we can't seem to be able to find what you're looking
-        for!<br />
-      </p>
-
-      <div class="container">
-        <div class="body-content">
-          <img
-            alt="error"
-            src="https://raw.githubusercontent.com/casjay-templates/default-web-assets/main/icons/errors/404.gif"
-          /><br />
+      <div class="align-items-center text-center">
+        <br />
+        <div style="font-size: 48px">
+          <span class="fa fa-ban red" />
+          <a href="https://duckduckgo.com/?q=http+status+code+404" target="_blank" rel="noopener noreferrer">404 Not Found </a>
+          <br /><br />
+        </div>
+        <div style="font-size: 24px" class="lead body-content">
+          We apologize but we can't seem to be able<br />
+          to find what you're looking for!!<br />
+          <img alt="error" height="400" width="400" src="/images/oops.gif" />
         </div>
       </div>
-      <a href="/" class="btn btn-secondary btn-outline-danger btn-lg btn-block"
-        >return to homepage
-      </a>
     </div>
   </div>
 </template>
