@@ -14,7 +14,7 @@
       Hosting by
       <a href="https://casjay.pro/hosting" target="_blank" rel="noopener noreferrer">Casjays Developments: Hosting</a><br />
       and powered by
-      <a href="https://casjaysdev.pro" target="_blank" rel="noopener noreferrer">CasjaysDev.com</a>
+      <a href="https://casjaysdev.pro" target="_blank" rel="noopener noreferrer">CasjaysDev.pro</a>
       <br />
       <br />
       <a href="https://www.patreon.com/casjay" target="_blank" rel="noopener noreferrer"
