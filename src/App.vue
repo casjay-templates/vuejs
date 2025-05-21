@@ -29,9 +29,9 @@
       |
       <a href="https://bugs.casjay.pro" target="_blank" rel="noopener noreferrer">CasjaysDev Bugs</a>
       <br />
-      <a href="https://status.casjay.pro" target="_blank" rel="noopener noreferrer">System Status</a>
+      <a href="https://servers.casjay.app" target="_blank" rel="noopener noreferrer">System Status</a>
       |
-      <a href="https://servers.casjay.pro" target="_blank" rel="noopener noreferrer">Service Status</a>
+      <a href="https://uptime.casjay.app" target="_blank" rel="noopener noreferrer">Service Status</a>
       |
       <a href="https://status.casjaysdev.pro" target="_blank" rel="noopener noreferrer">Complete Status</a>
       <br />
